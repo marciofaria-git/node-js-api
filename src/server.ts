@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.json())
 
-app.use(categoiresRoutes)
+app.use("/categories",categoiresRoutes)
 
 
 app.listen(server_port, ()=> console.log(`Server is Running on port ${server_port} 🍷🗿`))
